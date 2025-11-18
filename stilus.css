@@ -1,0 +1,136 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+    color: beige;
+    /*font-size: 10px;*/
+}
+main{
+    display: grid;
+    grid-template-areas:
+    'h h'
+    'ar n'
+    'f f'
+    ;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #333333;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 2fr 1fr;
+}
+header{
+    grid-area: h;
+    background-image: url('design/beer-new_401732638.jpg');
+    height: 300px;
+    background-size: cover;
+    font-family: Garamond;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 4px;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+article{
+    grid-area: ar;
+}
+nav{
+    grid-area: n;
+}
+footer{
+    grid-area: f;
+}
+
+body{
+    background-image: url("design/teglafal.jpg");
+    display: block;
+
+}
+nav ol li{
+    list-style-type: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    width: auto;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+nav ol{
+    margin: 10px;
+}
+/*
+a:visited{
+    /*már egyszer rákattintottak, látogatott*/
+    /*color: red;
+}*/
+
+li:hover{
+    /*ráhúzom az egeret*/
+    background-color: rgba(211, 211, 178)
+}
+a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+a:hover{
+    color: white;
+}
+/*
+a:active{
+    /*éppen kattintom, ki van jelölve*/
+    /*background-color: yellow;
+}
+/*a:link{
+    /*még sosem kattintottam rá, nem jártak itt*/
+    /*color: purple;
+}
+*/
+article p{
+    text-align: justify;
+    font-size: 10px;
+}
+article *{
+    font-size: 10px;
+}
+
+article h2{
+    font-size: 15px;
+}
+
+figure img{
+    width: 200px;
+    height: auto;
+
+    margin: 10px;
+    padding: 5px;
+    border: solid 1px darkgray;
+    border-radius: 10px;
+}
+
+figure{
+    float: left;
+}
+footer{
+    background-color: gray;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+#felsorol li{
+    list-style-type: square;
+
+}
+#felsorol{
+    margin-left: 50px !important;
+}
+#felsorol li{
+    list-style-position: inside;
+}
